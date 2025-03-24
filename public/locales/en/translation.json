@@ -1,0 +1,166 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "whatwedo": "What We Do",
+    "process": "Process",
+    "contact": "Contact"
+  },
+
+  "footer": {
+    "rights": "All rights reserved.",
+    "contact": "Contact",
+    "services": "Services"
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Do you have questions or need help? Send us a message and we will reply as soon as possible.",
+    "formTitle": "Tell us what you need and we will advise you.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your Name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your Email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here...",
+    "sendButton": "Send Message",
+    "alertSuccess": "Message sent successfully.",
+    "alertError": "Error sending the message. Please try again.",
+    "whatsappTitle": "You can also write to us on WhatsApp",
+    "whatsappText": "Click the button to send us a direct message.",
+    "whatsappButton": "Send WhatsApp Message"
+  },
+
+  "process": {
+    "title": "Our Process",
+    "subtitle": "Discover how we turn your ideas into a professional website.",
+    "step1": {
+      "title": "Consultation & Analysis",
+      "text": "We meet with you to understand your needs and define the goals of your website."
+    },
+    "step2": {
+      "title": "Custom Design",
+      "text": "We create an attractive and functional design that reflects your brand identity."
+    },
+    "step3": {
+      "title": "Web Development",
+      "text": "We program and optimize your site to be fast, secure, and responsive."
+    },
+    "step4": {
+      "title": "Launch & Delivery",
+      "text": "We launch your site and ensure it's ready to generate results from day one."
+    }
+  },
+
+  "whatwedo": {
+    "title": "What We Can Create for You",
+    "subtitle": "We design and develop websites tailored to your needs, ensuring each site is professional, functional, and attractive.",
+    "landing": {
+      "title": "Landing Page",
+      "desc": "A Landing Page is a destination page designed specifically to turn visitors into customers. It is used for marketing campaigns, ads, or promoting products and services.",
+      "benefits": "Benefits",
+      "list": [
+        "Ideal for ads on Google, Facebook, or Instagram.",
+        "Clean design focused on a single action (signup, purchase, call, etc.).",
+        "Fast loading and SEO optimization to attract clients."
+      ],
+      "ideal": "Who is it for? Entrepreneurs, small businesses, events, and product launches."
+    },
+    "corporate": {
+      "title": "Corporate Website",
+      "desc": "A Corporate Website represents a company's identity. Includes sections like 'Home', 'About Us', 'Services', 'Contact'.",
+      "benefits": "Benefits",
+      "list": [
+        "Strengthens your company's professional image.",
+        "Attracts clients with clear and structured information.",
+        "Can include blogs, testimonials, and contact forms."
+      ],
+      "ideal": "Who is it for? Companies, professionals, and businesses needing an online presence."
+    },
+    "ecommerce": {
+      "title": "Online Store (E-commerce)",
+      "desc": "An Online Store allows you to sell products or services with online payments. Includes inventory management, orders, and more.",
+      "benefits": "Benefits",
+      "list": [
+        "Sell products 24/7 without geographical limits.",
+        "Integration with payment gateways (PayPal, Stripe, MercadoPago, etc.).",
+        "Admin panel to manage products and orders."
+      ],
+      "ideal": "Who is it for? Businesses wanting to sell products or digital goods automatically."
+    },
+    "button": "Request"
+  },
+
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "We empower businesses with professional, modern, and optimized websites."
+    },
+    "intro": {
+      "title": "Who are we?",
+      "text1": "We are XpressWeb, a team of developers passionate about technology and web design.",
+      "text2": "We specialize in creating tailored digital solutions for businesses, entrepreneurs, and companies."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To help businesses and entrepreneurs boost their online presence with attractive, functional, and optimized websites."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "To be the leading web development agency, recognized for innovation, quality, and commitment."
+    },
+    "values": {
+      "title": "Our Values",
+      "item1": "Innovation - We stay up to date with the latest trends.",
+      "item2": "Creativity - We design unique and personalized websites.",
+      "item3": "Commitment - Your success is our priority.",
+      "item4": "Results - We create solutions focused on conversion."
+    },
+    "why": {
+      "title": "Why Choose Us?",
+      "subtitle": "Here are some reasons why our clients trust us:",
+      "reason1": "Modern and professional designs",
+      "reason2": "SEO optimization to improve visibility",
+      "reason3": "Fast and mobile-friendly websites",
+      "reason4": "Personalized support and 24/7 service",
+      "reason5": "Affordable prices with guaranteed quality"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "testimonial1": "\"Thanks to XpressWeb, my business has a professional website that generates clients every day.\" - Carlos R.",
+      "testimonial2": "\"Fast service, amazing design, and guaranteed results. Totally recommended!\" - Laura M."
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "We Transform Your Business with a Professional Website",
+      "subtitle": "Modern, functional, and optimized design for your digital success.",
+      "button": "Request Your Website"
+    },
+    "benefits": {
+      "title": "Why Do You Need a Website?",
+      "item1": { "title": "Greater Visibility", "text": "Your business will be available online 24/7, reaching more customers." },
+      "item2": { "title": "Increase Sales", "text": "An online store allows you to sell products and services anytime." },
+      "item3": { "title": "Professional Image", "text": "A well-designed site builds trust and credibility." }
+    },
+    "services": {
+      "title": "What We Can Do for You",
+      "item1": { "title": "Landing Page", "text": "Landing page to attract clients and increase conversions." },
+      "item2": { "title": "Corporate Website", "text": "Professional site representing your company's identity and values." },
+      "item3": { "title": "Online Store", "text": "Platform to sell products or services with online payments." },
+      "button": "See More"
+    },
+    "process": {
+      "title": "How We Work",
+      "item1": { "title": "Consultation", "text": "We analyze your needs to define a clear strategy." },
+      "item2": { "title": "Design", "text": "Modern and functional design tailored to your business." },
+      "item3": { "title": "Launch", "text": "Official launch of your impactful website." }
+    },
+    "cta": {
+      "title": "Ready to Build Your Website?",
+      "text": "Modern design, tailored to your business and optimized for results.",
+      "button": "Contact Us Now"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "menu": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "whatwedo": "Qué hacemos",
+    "process": "Proceso",
+    "contact": "Contacto"
+  },
+
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contact": "Contacto",
+    "services": "Servicios"
+  },
+
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Tienes dudas o necesitas ayuda? Envíanos un mensaje y te responderemos lo antes posible.",
+    "formTitle": "Cuéntanos qué necesitas y te asesoramos.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu Nombre",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Tu Correo Electrónico",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje aquí...",
+    "sendButton": "Enviar Mensaje",
+    "alertSuccess": "Mensaje enviado correctamente.",
+    "alertError": "Error al enviar el mensaje. Inténtalo de nuevo.",
+    "whatsappTitle": "También puedes escribirnos por WhatsApp",
+    "whatsappText": "Haz clic en el botón para enviarnos un mensaje directo.",
+    "whatsappButton": "Enviar Mensaje por WhatsApp"
+  },
+
+  "process": {
+    "title": "Nuestro Proceso",
+    "subtitle": "Descubre cómo convertimos tus ideas en una página web profesional.",
+    "step1": {
+      "title": "Consulta y Análisis",
+      "text": "Nos reunimos contigo para entender tus necesidades y definir los objetivos de tu página web."
+    },
+    "step2": {
+      "title": "Diseño Personalizado",
+      "text": "Creamos un diseño atractivo y funcional que refleje la identidad de tu negocio."
+    },
+    "step3": {
+      "title": "Desarrollo Web",
+      "text": "Programamos y optimizamos tu web para que sea rápida, segura y adaptada a todos los dispositivos."
+    },
+    "step4": {
+      "title": "Lanzamiento y Entrega",
+      "text": "Publicamos tu web y nos aseguramos de que esté lista para generar resultados desde el primer día."
+    }
+  },
+
+  "whatwedo": {
+    "title": "Lo que Podemos Crear para Ti",
+    "subtitle": "Diseñamos y desarrollamos páginas web según tus necesidades, asegurándonos de que cada sitio sea profesional, funcional y atractivo.",
+    "landing": {
+      "title": "Landing Page",
+      "desc": "Una Landing Page es una página de destino diseñada específicamente para convertir visitantes en clientes. Se utiliza para campañas de marketing, anuncios o promoción de productos y servicios.",
+      "benefits": "Beneficios",
+      "list": [
+        "Ideal para campañas publicitarias en Google, Facebook o Instagram.",
+        "Diseño limpio y enfocado en una sola acción (registro, compra, llamada, etc.).",
+        "Carga rápida y optimización SEO para atraer clientes."
+      ],
+      "ideal": "¿Para quién es ideal? Emprendedores, negocios pequeños, eventos y lanzamiento de productos."
+    },
+    "corporate": {
+      "title": "Web Corporativa",
+      "desc": "Una Web Corporativa representa la identidad de una empresa. Incluye secciones como 'Inicio', 'Nosotros', 'Servicios', 'Contacto'.",
+      "benefits": "Beneficios",
+      "list": [
+        "Refuerza la imagen profesional de tu empresa.",
+        "Permite atraer clientes con información clara y estructurada.",
+        "Puede incluir blogs, testimonios y formularios de contacto."
+      ],
+      "ideal": "¿Para quién es ideal? Empresas, profesionales y negocios que necesitan presencia online."
+    },
+    "ecommerce": {
+      "title": "Tienda Online (E-commerce)",
+      "desc": "Una Tienda Online permite vender productos o servicios con pagos en línea. Incluye gestión de inventario, pedidos y más.",
+      "benefits": "Beneficios",
+      "list": [
+        "Permite vender productos 24/7 sin límites geográficos.",
+        "Integración con pasarelas de pago (PayPal, Stripe, MercadoPago, etc.).",
+        "Panel para gestionar productos y pedidos."
+      ],
+      "ideal": "¿Para quién es ideal? Negocios que desean vender productos físicos o digitales de manera automatizada."
+    },
+    "button": "Solicitar"
+  },
+
+  "about": {
+    "hero": {
+      "title": "Sobre Nosotros",
+      "subtitle": "Impulsamos negocios con páginas web profesionales, modernas y optimizadas."
+    },
+    "intro": {
+      "title": "¿Quiénes somos?",
+      "text1": "Somos XpressWeb, un equipo de desarrolladores apasionados por la tecnología y el diseño web.",
+      "text2": "Nos especializamos en crear soluciones digitales a medida para negocios, emprendedores y empresas."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "text": "Ayudar a negocios y emprendedores a potenciar su presencia en línea mediante páginas web atractivas, funcionales y optimizadas."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "text": "Ser la agencia líder en desarrollo web, reconocida por la innovación, calidad y compromiso."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "item1": "Innovación - Nos mantenemos actualizados con las últimas tendencias.",
+      "item2": "Creatividad - Diseñamos páginas únicas y personalizadas.",
+      "item3": "Compromiso - Tu éxito es nuestra prioridad.",
+      "item4": "Resultados - Creamos soluciones enfocadas en la conversión."
+    },
+    "why": {
+      "title": "¿Por qué elegirnos?",
+      "subtitle": "Estas son algunas razones por las que nuestros clientes confían en nosotros:",
+      "reason1": "Diseños modernos y profesionales",
+      "reason2": "Optimización SEO para mejorar visibilidad",
+      "reason3": "Páginas rápidas y adaptadas a móviles",
+      "reason4": "Soporte personalizado y atención 24/7",
+      "reason5": "Precios accesibles con calidad garantizada"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "testimonial1": "\"Gracias a XpressWeb, mi negocio tiene una página profesional que me genera clientes todos los días.\" - Carlos R.",
+      "testimonial2": "\"Atención rápida, diseño increíble y resultados garantizados. ¡Totalmente recomendados!\" - Laura M."
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "Transformamos Tu Negocio con una Página Web Profesional",
+      "subtitle": "Diseño moderno, funcional y optimizado para tu éxito digital.",
+      "button": "Solicita Tu Página Web"
+    },
+    "benefits": {
+      "title": "¿Por Qué Necesitas una Página Web?",
+      "item1": { "title": "Mayor Visibilidad", "text": "Tu negocio estará disponible en Internet 24/7, permitiéndote llegar a más clientes." },
+      "item2": { "title": "Aumento de Ventas", "text": "Una tienda en línea te permite vender productos y servicios en cualquier momento." },
+      "item3": { "title": "Imagen Profesional", "text": "Un sitio bien diseñado genera confianza y credibilidad en tus clientes." }
+    },
+    "services": {
+      "title": "Lo que Podemos Hacer por Ti",
+      "item1": { "title": "Landing Page", "text": "Página de aterrizaje para captar clientes y aumentar conversiones." },
+      "item2": { "title": "Web Corporativa", "text": "Web profesional que representa la identidad y valores de tu empresa." },
+      "item3": { "title": "Tienda Online", "text": "Plataforma para vender productos o servicios con pagos online." },
+      "button": "Ver Más"
+    },
+    "process": {
+      "title": "¿Cómo Trabajamos?",
+      "item1": { "title": "Consulta", "text": "Análisis de tus necesidades para definir una estrategia clara." },
+      "item2": { "title": "Diseño", "text": "Diseño moderno y funcional adaptado a tu negocio." },
+      "item3": { "title": "Entrega", "text": "Lanzamiento oficial de tu web con impacto." }
+    },
+    "cta": {
+      "title": "¿Listo para Crear Tu Página Web?",
+      "text": "Diseño moderno, adaptado a tu negocio y optimizado para resultados.",
+      "button": "Contáctanos Ahora"
+    }
+  }
+}

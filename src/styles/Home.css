@@ -1,0 +1,113 @@
+.home {
+    text-align: center;
+    background: #f8f9fa;
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    color: rgb(22, 21, 21);
+  }
+  
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Ajuste del contenido en el Hero */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(248, 243, 243, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    width: fit-content;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Ajuste de texto en escritorio */
+.hero-content h1 {
+    font-size: 2.7em;
+    color: #0b0b0b;
+    white-space: nowrap;
+}
+
+.hero-content p {
+    font-size: 1.6em;
+    color: #000309;
+}
+
+/* 📌 Mejoras para móviles */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-content {
+        top: 40%; 
+        background: rgba(248, 243, 243, 0.0);
+        padding: 10px 15px;
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        color: #0e0d0d;
+        font-size: 1.6em; 
+        white-space: normal;
+        background: rgba(248, 246, 246, 1);
+        border-radius: 5px;
+    }
+
+    .hero-content p {
+        font-size: 0.8em;
+        color: #161616;
+        background: rgba(248, 243, 243, 0.8);
+        border-radius: 3px;
+    }
+}
+  .cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Benefits */
+  .benefits-grid, .service-grid, .process-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .benefit-item, .service-item, .process-step {
+    width: 280px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-item h3, .service-item h3, .process-step h3 {
+    color: #007bff;
+  }
+  
+  .service-item img, .process-step img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* CTA Section */
+  .cta {
+    background: #007bff;
+    color: white;
+    padding: 40px;
+  }

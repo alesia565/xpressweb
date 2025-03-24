@@ -1,0 +1,211 @@
+/* NAVBAR GENERAL */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, rgba(0, 123, 255, 1), rgba(0, 183, 255, 1));
+  position: relative;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* LOGO PRINCIPAL MEJORADO */
+/* LOGO GENERAL */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
+
+/* XWP grande y elegante */
+.logo-main {
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto hover sutil */
+.logo-main:hover {
+  transform: scale(1.1);
+}
+
+/* Separador | */
+.logo-line {
+  margin: 0 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  font-size: 2em;
+}
+
+/* Subtítulo XpressWebPro */
+.logo-sub {
+  font-size: 1.2em; /* Un poco más grande */
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Poppins';
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover en subtítulo */
+.logo-sub:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE: Logo más simple y reducido en móvil */
+@media (max-width: 768px) {
+  .logo-main {
+    font-size: 2.4em; /* Reducir tamaño principal en móvil */
+    letter-spacing: 2px;
+  }
+
+  .logo-line {
+    display: none;
+  }
+
+  .logo-sub {
+    font-size: 1em; /* Reducir subtítulo en móvil */
+  }
+}
+
+/* MENU */
+.nav-links {
+  display: flex;
+  gap: 25px; /* Más separación */
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none; /* Quitar subrayado */
+  color: white;
+  font-size: 1.8em; /* Más grande */
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+  font-family: 'Verdana', sans-serif; /* Fuente más formal */
+}
+
+.nav-links a:hover {
+  color: yellow;
+  transform: translateY(-2px); /* Efecto pequeño al pasar ratón */
+}
+
+/* SELECTOR DE IDIOMA */
+/* Para el selector de idioma en escritorios */
+.language-selector {
+  position: absolute;
+  top: 35px; /* Ajusta esto para moverlo hacia arriba o hacia abajo */
+  right: 1300px; /* Ajusta la distancia desde el borde derecho */
+  font-size: 1.5em; /* Ajusta el tamaño del texto */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Para el selector de idioma en móviles */
+@media (max-width: 768px) {
+  .language-selector {
+    position: absolute;
+  top: 75px; /* Ajusta esto para moverlo hacia arriba o hacia abajo */
+  right: 265px; /* Ajusta la distancia desde el borde derecho */
+  font-size: 1.5em; /* Ajusta el tamaño del texto */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+    
+  }
+}
+
+.language-button {
+  cursor: pointer;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  user-select: none;
+  transition: background 0.3s;
+  font-size: 1.1em;
+}
+
+.language-button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown */
+.language-dropdown {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.language-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  background: white;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 1em;
+}
+
+.language-dropdown button:hover {
+  background: rgba(0, 123, 255, 0.1);
+}
+
+/* ICONO MÓVIL */
+.menu-icon {
+  display: none;
+  font-size: 2.5em;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    padding: 30px 0;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links a {
+    font-size: 1.7em; /* Más grande en móvil */
+    padding: 12px;
+  }
+
+  .language-selector {
+    margin-top: 20px;
+  }
+
+  .logo-xwp {
+    font-size: 2.2em; /* Logo más pequeño en móvil */
+  }
+}
