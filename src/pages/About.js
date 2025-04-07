@@ -1,82 +1,115 @@
 import React from "react";
 import "../styles/About.css";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
-// Importar imágenes
 import teamImage from "../assets/team.jpg";
 import missionImage from "../assets/mission.jpg";
 import valuesImage from "../assets/values.jpg";
 import testimonialsImage from "../assets/testimonials.jpg";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 50 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8, ease: "easeOut" }
+};
 
 const About = () => {
   const { t } = useTranslation();
 
   return (
     <div className="about-page">
-      {/* Hero Section */}
-      <section className="about-hero">
+      {/* Hero */}
+      <motion.section className="about-hero" {...fadeInUp}>
         <div className="about-hero-content">
           <h1>{t("about.hero.title")}</h1>
           <p>{t("about.hero.subtitle")}</p>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Quiénes somos */}
-      <section className="about-intro">
+      {/* ¿Quiénes somos? */}
+      <motion.section className="about-intro" {...fadeInUp}>
         <div className="about-text">
           <h2>{t("about.intro.title")}</h2>
           <p>{t("about.intro.text1")}</p>
           <p>{t("about.intro.text2")}</p>
         </div>
-        <img src={teamImage} alt="Equipo" className="about-image" />
-      </section>
+        <motion.img
+          src={teamImage}
+          alt="Equipo"
+          className="about-image"
+          whileHover={{ scale: 1.03 }}
+        />
+      </motion.section>
 
       {/* Misión y Visión */}
-      <section className="about-mission">
-        <img src={missionImage} alt="Misión" className="about-image" />
+      <motion.section className="about-mission" {...fadeInUp}>
+        <motion.img
+          src={missionImage}
+          alt="Misión"
+          className="about-image"
+          whileHover={{ scale: 1.03 }}
+        />
         <div className="about-text">
           <h2>{t("about.mission.title")}</h2>
           <p>{t("about.mission.text")}</p>
           <h2>{t("about.vision.title")}</h2>
           <p>{t("about.vision.text")}</p>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Nuestros Valores */}
-      <section className="about-values">
+      {/* Valores */}
+      <motion.section className="about-values" {...fadeInUp}>
         <h2>{t("about.values.title")}</h2>
         <div className="values-grid">
-          <div className="value-item">🚀 {t("about.values.item1")}</div>
-          <div className="value-item">💡 {t("about.values.item2")}</div>
-          <div className="value-item">🤝 {t("about.values.item3")}</div>
-          <div className="value-item">🎯 {t("about.values.item4")}</div>
+          {[1, 2, 3, 4].map((i) => (
+            <motion.div
+              key={i}
+              className="value-item"
+              whileHover={{ scale: 1.05, backgroundColor: "#f0f0f0" }}
+            >
+              {t(`about.values.item${i}`)}
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* ¿Por qué elegirnos? */}
-      <section className="about-why">
+      <motion.section className="about-why" {...fadeInUp}>
         <h2>{t("about.why.title")}</h2>
         <p>{t("about.why.subtitle")}</p>
         <ul>
-          <li>✅ {t("about.why.reason1")}</li>
-          <li>✅ {t("about.why.reason2")}</li>
-          <li>✅ {t("about.why.reason3")}</li>
-          <li>✅ {t("about.why.reason4")}</li>
-          <li>✅ {t("about.why.reason5")}</li>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <motion.li
+              key={i}
+              whileHover={{ scale: 1.05, color: "#fuchsia" }}
+            >
+              ✅ {t(`about.why.reason${i}`)}
+            </motion.li>
+          ))}
         </ul>
-      </section>
+      </motion.section>
 
       {/* Testimonios */}
-      <section className="about-testimonials">
+      <motion.section className="about-testimonials" {...fadeInUp}>
         <h2>{t("about.testimonials.title")}</h2>
-        <img src={testimonialsImage} alt="Clientes satisfechos" className="about-image" />
+        <motion.img
+          src={testimonialsImage}
+          alt="Clientes satisfechos"
+          className="about-image"
+          whileHover={{ scale: 1.03 }}
+        />
         <div className="testimonial">
-          <p>⭐️⭐️⭐️⭐️⭐️ {t("about.testimonials.testimonial1")}</p>
+          <motion.p whileHover={{ scale: 1.02 }}>
+            ⭐️⭐️⭐️⭐️⭐️ {t("about.testimonials.testimonial1")}
+          </motion.p>
         </div>
         <div className="testimonial">
-          <p>⭐️⭐️⭐️⭐️⭐️ {t("about.testimonials.testimonial2")}</p>
+          <motion.p whileHover={{ scale: 1.02 }}>
+            ⭐️⭐️⭐️⭐️⭐️ {t("about.testimonials.testimonial2")}
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

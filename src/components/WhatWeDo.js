@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import "../styles/WhatWeDo.css";
 
 // Imágenes importadas
@@ -19,75 +20,82 @@ import ecommerce2 from "../assets/ecommerce2.jpg";
 import ecommerce3 from "../assets/ecommerce3.jpg";
 import ecommerce4 from "../assets/ecommerce4.jpg";
 
+const fadeIn = {
+  initial: { opacity: 0, y: 40 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, ease: "easeOut" },
+};
+
 const WhatWeDo = () => {
   const { t } = useTranslation();
 
+  const landingList = t("whatwedo.landing.list", { returnObjects: true });
+  const corporateList = t("whatwedo.corporate.list", { returnObjects: true });
+  const ecommerceList = t("whatwedo.ecommerce.list", { returnObjects: true });
+
+  const renderImages = (images) =>
+    images.map((img, i) => (
+      <motion.img
+        key={i}
+        src={img}
+        alt={`Service ${i + 1}`}
+        className="interactive-image"
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3 }}
+      />
+    ));
+
+  const renderList = (items) =>
+    Array.isArray(items)
+      ? items.map((item, i) => (
+          <motion.li
+            key={i}
+            whileHover={{ scale: 1.03, color: "#e600a8" }}
+            transition={{ duration: 0.2 }}
+          >
+            ✅ {item}
+          </motion.li>
+        ))
+      : null;
+
   return (
-    <section className="services" id="services">
+    <motion.section className="services" id="services" {...fadeIn}>
       <h2>{t("whatwedo.title")}</h2>
       <p>{t("whatwedo.subtitle")}</p>
 
       {/* Landing Page */}
-      <div className="service-category">
+      <motion.div className="service-category" {...fadeIn}>
         <h3>{t("whatwedo.landing.title")}</h3>
         <p>{t("whatwedo.landing.desc")}</p>
         <p><strong>{t("whatwedo.landing.benefits")}:</strong></p>
-        <ul>
-          {t("whatwedo.landing.list", { returnObjects: true }).map((item, index) => (
-            <li key={index}>✅ {item}</li>
-          ))}
-        </ul>
+        <ul>{renderList(landingList)}</ul>
         <p><strong>{t("whatwedo.landing.ideal")}</strong></p>
-        <div className="image-grid">
-          <img src={landing1} alt="Landing Page 1" />
-          <img src={landing2} alt="Landing Page 2" />
-          <img src={landing3} alt="Landing Page 3" />
-          <img src={landing4} alt="Landing Page 4" />
-        </div>
+        <div className="image-grid">{renderImages([landing1, landing2, landing3, landing4])}</div>
         <Link to="/contact" className="service-button">{t("whatwedo.button")}</Link>
-      </div>
+      </motion.div>
 
       {/* Web Corporativa */}
-      <div className="service-category">
+      <motion.div className="service-category" {...fadeIn}>
         <h3>{t("whatwedo.corporate.title")}</h3>
         <p>{t("whatwedo.corporate.desc")}</p>
         <p><strong>{t("whatwedo.corporate.benefits")}:</strong></p>
-        <ul>
-          {t("whatwedo.corporate.list", { returnObjects: true }).map((item, index) => (
-            <li key={index}>✅ {item}</li>
-          ))}
-        </ul>
+        <ul>{renderList(corporateList)}</ul>
         <p><strong>{t("whatwedo.corporate.ideal")}</strong></p>
-        <div className="image-grid">
-          <img src={corporate1} alt="Corporate Website 1" />
-          <img src={corporate2} alt="Corporate Website 2" />
-          <img src={corporate3} alt="Corporate Website 3" />
-          <img src={corporate4} alt="Corporate Website 4" />
-        </div>
+        <div className="image-grid">{renderImages([corporate1, corporate2, corporate3, corporate4])}</div>
         <Link to="/contact" className="service-button">{t("whatwedo.button")}</Link>
-      </div>
+      </motion.div>
 
       {/* Tienda Online */}
-      <div className="service-category">
+      <motion.div className="service-category" {...fadeIn}>
         <h3>{t("whatwedo.ecommerce.title")}</h3>
         <p>{t("whatwedo.ecommerce.desc")}</p>
         <p><strong>{t("whatwedo.ecommerce.benefits")}:</strong></p>
-        <ul>
-          {t("whatwedo.ecommerce.list", { returnObjects: true }).map((item, index) => (
-            <li key={index}>✅ {item}</li>
-          ))}
-        </ul>
+        <ul>{renderList(ecommerceList)}</ul>
         <p><strong>{t("whatwedo.ecommerce.ideal")}</strong></p>
-        <div className="image-grid">
-          <img src={ecommerce1} alt="Online Store 1" />
-          <img src={ecommerce2} alt="Online Store 2" />
-          <img src={ecommerce3} alt="Online Store 3" />
-          <img src={ecommerce4} alt="Online Store 4" />
-        </div>
+        <div className="image-grid">{renderImages([ecommerce1, ecommerce2, ecommerce3, ecommerce4])}</div>
         <Link to="/contact" className="service-button">{t("whatwedo.button")}</Link>
-      </div>
-
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

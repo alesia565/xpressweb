@@ -1,21 +1,20 @@
 .services {
   text-align: center;
   padding: 60px 20px;
-  background: #f8f9fa;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
 }
 
 .services h2 {
   font-size: 2.2em;
-  color: #333;
+  color: #fcfafa;
 }
 
 .services p {
-  color: #555;
+  color: #fff9f9;
   margin-bottom: 20px;
   font-size: 16px;
 }
 
-/* Sección individual de cada servicio */
 .service-category {
   margin-bottom: 50px;
   padding: 30px;
@@ -25,7 +24,7 @@
 }
 
 .service-category h3 {
-  color: #007bff;
+  color: #e91e63;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -33,6 +32,10 @@
 .service-category ul {
   list-style: none;
   padding: 0;
+}
+
+.service-category p {
+color: #333;
 }
 
 .service-category ul li {
@@ -72,3 +75,4 @@
 .service-button:hover {
   background: #0056b3;
 }
+
